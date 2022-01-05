@@ -11,8 +11,7 @@ namespace TechJobsOO
 
         public CoreCompetency()
         {
-            id = nextId;
-            nextId++;
+            id = nextId++;
         }
 
         public CoreCompetency(string v) : this()
