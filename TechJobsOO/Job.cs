@@ -19,7 +19,8 @@ namespace TechJobsOO
 
         public Job()
         {
-            Id = nextId++;
+            Id = nextId;
+            nextId++;
         }
 
         public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this()

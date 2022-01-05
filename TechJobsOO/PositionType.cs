@@ -9,7 +9,8 @@ namespace TechJobsOO
 
         public PositionType()
         {
-            Id = nextId++;
+            Id = nextId;
+            nextId++;
         }
 
         public PositionType(string value) : this()

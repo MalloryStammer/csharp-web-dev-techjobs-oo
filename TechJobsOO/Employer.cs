@@ -10,7 +10,8 @@ namespace TechJobsOO
 
     public Employer()
         {
-            Id = nextId++;
+            Id = nextId;
+            nextId++;
         }
 
         public Employer(string value) : this()
