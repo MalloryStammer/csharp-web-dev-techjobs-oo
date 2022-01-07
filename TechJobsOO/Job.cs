@@ -45,5 +45,43 @@ namespace TechJobsOO
             return obj is Job job &&
                    Id == job.Id;
         }
+
+        public override string ToString()
+        {
+            string jobOutput =
+                
+                $"\n" +
+                $"ID: {Id}\n" +
+                $"Name: {Name}\n" +
+                $"Employer: {EmployerName.ToString()}\n" +
+                $"Location: {EmployerLocation.ToString()}\n" +
+                $"Position Type: {JobType.ToString()}\n" +
+                $"Core Competency: {JobCoreCompetency.ToString()}\n" +
+                $"\n"
+                ;
+
+            //if (Name==null || Name == "")
+            //{
+            //    return Name = "Data not available";
+            //}
+            //if (EmployerName.Value == null || EmployerName.Value == "")
+            //{
+            //    return EmployerName.Value = "Data not available";
+            //}
+            //if (EmployerLocation.Value == null || EmployerLocation.Value == "")
+            //{
+            //    return EmployerLocation.Value = "Data not available";
+            //}
+            //if (JobType.Value == null || JobType.Value == "")
+            //{
+            //    return JobType.Value = "Data not available";
+            //}
+            //if (JobCoreCompetency.Value == null || JobCoreCompetency.Value == "")
+            //{
+            //    return JobCoreCompetency.Value = "Data not available";
+            //}
+
+            return jobOutput;
+        }
     }
 }
